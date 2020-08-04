@@ -1,0 +1,46 @@
+<div class="mt-1">
+  <app-disclaimer></app-disclaimer>
+  <!-- <div class="mb-2">
+    GHMC does not publish time of a recorded Covid-19 case.
+    So the patient list is taken as is assuming it to be in chronological order.
+  </div> -->
+  <div>
+    <div class="mb-2">Select Type of Chart</div>
+  <p-selectButton
+    [options]="types"
+    (onChange)="onChangeType($event)"
+  >
+  </p-selectButton>
+  </div>
+
+  <div *ngIf="showValuesControl">
+    <div class="mb-1">Select {{selectedType}}</div>
+    <p-dropdown
+      [options]="values"
+      [(ngModel)]="selectedValue"
+      filter = "true"
+      [showTransitionOptions]="'2ms'"
+      [hideTransitionOptions]="'2ms'">
+    </p-dropdown>
+    <p-button label="Generate Chart" (onClick)="onGenerateChart($event)"></p-button>
+  </div>
+  <div *ngIf="showChart">
+    <div class="flex">
+      <div class="flex-item">
+        <div style="display: block;">
+          <canvas baseChart width="400" height="200"
+                    [datasets]="chartData"
+                    [labels]="chartLabels"
+                    [options]="chartOptions"
+                    [colors]="chartColors"
+                    [legend]="chartLegend"
+                    [chartType]="chartType"
+                    [plugins]="chartPlugins"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)">
+            </canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

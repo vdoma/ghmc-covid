@@ -1,0 +1,54 @@
+<div class="mt-1">
+  <app-disclaimer></app-disclaimer>
+  <h3 class="text-center text-secondary">Number of People Infected in GHMC Wards</h3>
+  <!-- <button (click)="onSort()" class="btn btn-primary float-right">{{sortBtnLabel}}</button> -->
+
+  <div *ngIf="dataLoaded" style="display: block">
+    <div>
+      <canvas baseChart
+        [datasets]="chartData1"
+        [labels]="chartLabels1"
+        [options]="chartOptions"
+        [legend]="chartLegend"
+        [chartType]="chartType">
+      </canvas>
+    </div>
+    <div>
+      <canvas baseChart
+        [datasets]="chartData2"
+        [labels]="chartLabels2"
+        [options]="chartOptions"
+        [legend]="chartLegend"
+        [chartType]="chartType">
+      </canvas>
+    </div>
+    <div>
+      <canvas baseChart
+        [datasets]="chartData3"
+        [labels]="chartLabels3"
+        [options]="chartOptions"
+        [legend]="chartLegend"
+        [chartType]="chartType">
+      </canvas>
+    </div>
+    <div>
+      <canvas baseChart
+        [datasets]="chartData4"
+        [labels]="chartLabels4"
+        [options]="chartOptions"
+        [legend]="chartLegend"
+        [chartType]="chartType">
+      </canvas>
+    </div>
+    <div>
+      <canvas baseChart
+        [datasets]="chartData5"
+        [labels]="chartLabels5"
+        [options]="chartOptions"
+        [legend]="chartLegend"
+        [chartType]="chartType">
+      </canvas>
+    </div>
+
+   </div>
+ </div>

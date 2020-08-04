@@ -1,0 +1,30 @@
+<div class="container-fluid h-80" style="min-height: 100%">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">GHMC Covid-19 Cases</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="toggleNavbar()"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" [ngClass]="{ 'show': navbarOpen }">
+        <div class="navbar-nav">
+          <!-- <a class="nav-item nav-link" routerLink="/mandal">Mandal</a> -->
+          <a class="nav-item nav-link" routerLink="/zone">Zone</a>
+          <a class="nav-item nav-link" routerLink="/circle">Circle</a>
+          <a class="nav-item nav-link" routerLink="/ward">Ward</a>
+          <a class="nav-item nav-link" routerLink="/gender">Gender</a>
+          <a class="nav-item nav-link" routerLink="/time">Time Based</a>
+          <a class="nav-item nav-link" routerLink="/table">Raw Data</a>
+        </div>
+      </div>
+    </nav>
+</div>
+
+<router-outlet></router-outlet>
+

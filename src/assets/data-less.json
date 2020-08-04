@@ -1,0 +1,71 @@
+[{
+  "mandal": "Others",
+  "patientId": "P3",
+  "gender": "Male",
+  "ward": "RK Puram",
+  "circle": "Saroornagar-05",
+  "zone": "L.B.Nagar"
+}, {
+  "mandal": "Others",
+  "patientId": "P4",
+  "gender": "Male",
+  "ward": "Jubilee Hills",
+  "circle": "Jubileehills-18",
+  "zone": "Khairatabad"
+}, {
+  "mandal": "Others",
+  "patientId": "P6",
+  "gender": "Male",
+  "ward": "Nacharam",
+  "circle": "Kapra-01",
+  "zone": "L.B.Nagar"
+}, {
+  "mandal": "Others",
+  "patientId": "P14",
+  "gender": "Male",
+  "ward": "Ramgopalpet",
+  "circle": "Begumpet-30",
+  "zone": "Secunderabad"
+}, {
+  "mandal": "Others",
+  "patientId": "P15",
+  "gender": "Male",
+  "ward": "KPHB",
+  "circle": "Moosapet-23",
+  "zone": "Kukatpally"
+}, {
+  "mandal": "Others",
+  "patientId": "P17",
+  "gender": "Female",
+  "ward": "Gachibowli",
+  "circle": "Gachibowli-20",
+  "zone": "Serilingampally"
+}, {
+  "mandal": "Others",
+  "patientId": "P20",
+  "gender": "Male",
+  "ward": "Ramgopalpet",
+  "circle": "Begumpet-30",
+  "zone": "Secunderabad"
+}, {
+  "mandal": "Others",
+  "patientId": "P23",
+  "gender": "Male",
+  "ward": "KPHB",
+  "circle": "Moosapet-23",
+  "zone": "Kukatpally"
+}, {
+  "mandal": "Others",
+  "patientId": "P24",
+  "gender": "Male",
+  "ward": "Madhapur",
+  "circle": "Chandanagar-21",
+  "zone": "Serilingampally"
+}, {
+  "mandal": "Others",
+  "patientId": "P25",
+  "gender": "Male",
+  "ward": "Shaikpet",
+  "circle": "Jubileehills-18",
+  "zone": "Khairatabad"
+}]

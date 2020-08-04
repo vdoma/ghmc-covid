@@ -1,0 +1,14 @@
+<div class="mt-1">
+  <app-disclaimer></app-disclaimer>
+  <h3 class="text-center text-secondary">Number of People Infected in GHMC Zones</h3>
+  <div *ngIf="dataLoaded" style="display: block">
+     <canvas baseChart
+       [datasets]="chartData"
+       [labels]="chartLabels"
+       [options]="chartOptions"
+       [legend]="chartLegend"
+       [chartType]="chartType">
+     </canvas>
+   </div>
+
+ </div>

@@ -1,0 +1,12 @@
+<div class="mt-1">
+  <app-disclaimer></app-disclaimer>
+  <div *ngIf="dataLoaded" style="display: block">
+    <canvas baseChart
+      [datasets]="chartData"
+      [labels]="chartLabels"
+      [options]="chartOptions"
+      [legend]="chartLegend"
+      [chartType]="chartType">
+    </canvas>
+  </div>
+</div>
